@@ -13,7 +13,7 @@ public class GenericsExample : MonoBehaviour
         var marriage1 = new Pair<string,string>() {First = "HanMeiMei", Second = "ZhangQiang"};
         var number = 5;
         PrintTheThing(number);
-        PrintTheThings(new List<int>(){1,2,3,4,5,6,7,8,9});
+        PrintTheThings(new List<int>() {1, 2, 3, 4, 5, 6, 7, 8, 9});
     }
 
     //GenericMethod
@@ -46,12 +46,12 @@ public class PairIntInt
     public int Second;
 }
 
+
 public class PairStringString
 {
     public string First;
     public string Second;
 }
-
 
 
 //Generic Classes

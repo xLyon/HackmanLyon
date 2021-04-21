@@ -45,6 +45,8 @@ public class Evently
     }
     //Publish
     //Gonna have something to do with Invoke...
+    //serialize = save
+    //deserialize = read
     public void Publish<T>(T t)
     {
         if (t == null)

@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 using UnityEngine;
 
 public class LevelGeneratorSystem : MonoBehaviour
@@ -29,6 +31,8 @@ public class LevelGeneratorSystem : MonoBehaviour
                 var gridObjectClone = Instantiate(gridObjectPrefab);
                 gridObjectClone.GridPositon = new IntVector2(x, -y);
                 gridObjectClone.transform.position = new Vector3(gridObjectClone.GridPositon.x, gridObjectClone.GridPositon.y, 0);
+
+                
             }
         }
     }
